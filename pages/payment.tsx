@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
 
 const CartPage = () => {
+  console.log(window.location)
+
   const cart = useSelector((state: any) => state.cart)
   const dispatch = useDispatch()
 
@@ -17,7 +19,7 @@ const CartPage = () => {
   }
 
   const processPayment = async () => {
-    const url = `${process.env.URL}/api/chargecard`
+    const url = `${window.location.origin}/api/chargecard`
     const newCart = cart.map(({ id, quantity }: any) => ({
       id,
       qty: quantity,
