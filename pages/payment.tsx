@@ -17,7 +17,7 @@ const CartPage = () => {
   }
 
   const processPayment = async () => {
-    const url = 'http://localhost:3000/api/chargecard'
+    const url = `${process.env.URL}/api/chargecard`
     const newCart = cart.map(({ id, quantity }: any) => ({
       id,
       qty: quantity,

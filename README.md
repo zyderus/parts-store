@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-  🚀 View @ https://parts-store.vercel.app | hosted with <a href="https://vercel.com/">Vercel</a>
+  🚀 View @ https://nextjs-shopping-cart-theta.vercel.app/ | hosted with <a href="https://vercel.com/">Vercel</a>
 </p>
 
 <div align="center">
