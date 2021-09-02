@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo a {
+  color: darkcyan;
+}
+
+.logo span {
+  color: black;
+  font-weight: 400;
+}
+
+.links {
+  display: flex;
+}
+
+.navlink {
+  list-style: none;
+  margin: 0 0.75rem;
+  text-transform: uppercase;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlink a:hover {
+  color: darkcyan;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart svg {
+  width: 2rem;
+  color: #888;
+}
+
+.cart span {
+  position: absolute;
+  background-color: darkcyan;
+  width: 21px;
+  height: 21px;
+  border-radius: 10px;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  line-height: 1.3rem;
+}

@@ -1,0 +1,18 @@
+.footer {
+  margin-block: 2rem;
+  padding: 1rem 0;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.brand {
+  color: darkcyan;
+  font-weight: 600;
+}
+
+.brand span {
+  color: black;
+  font-weight: 300;
+}

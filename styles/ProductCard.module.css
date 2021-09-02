@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  background: transparent;
+  text-transform: uppercase;
+  border: 2px solid darkcyan;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: darkcyan;
+  color: white;
+}

@@ -1,0 +1,131 @@
+.wrapper {
+  display: flex;
+}
+
+.summary,
+.container {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+}
+
+.container {
+  flex: 8;
+  margin-right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.header div {
+  flex: 1;
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid darkcyan;
+  margin-bottom: 2rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.body > * {
+  flex: 1;
+}
+
+.image {
+  width: 100px;
+}
+
+.desc {
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.desc span {
+  font-weight: 700;
+  color: darkcyan;
+}
+
+.buttons > button {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: darkcyan;
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.buttons > span {
+  font-weight: bold;
+}
+
+.delete {
+  font-size: 0.75rem;
+  border-bottom: 1px solid white;
+}
+.delete:hover {
+  border-bottom: 1px dashed darkcyan;
+  cursor: pointer;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.priceSmall {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.summary {
+  height: 100%;
+  flex: 4;
+}
+
+.summary .header div {
+  border-bottom: none;
+}
+
+.summary .summaryPrice {
+  text-align: end;
+}
+
+.promocode {
+  margin-block: 1rem;
+  padding-block: 2rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: #ddd;
+}
+
+.order {
+  background-color: darkcyan;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+}
