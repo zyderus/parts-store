@@ -51,12 +51,15 @@ const StripeHandler = async (req: any, res: any) => {
     line_items: lineItems,
     mode: 'payment',
     locale: 'ru',
-    success_url: `${process.env.URL}/success`,
-    cancel_url: `${process.env.URL}/cancelled`,
+    // success_url: `${process.env.URL}/success`,
+    // cancel_url: `${process.env.URL}/cancelled`,
+    success_url: `https://nextjs-shopping-cart-theta.vercel.app/success`,
+    cancel_url: `https://nextjs-shopping-cart-theta.vercel.app/cancelled`,
   })
 
   res.status(200).json({
     sessionId: session.id,
+    domainURL,
   })
 }
 

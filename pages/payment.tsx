@@ -34,6 +34,7 @@ const CartPage = () => {
     }).then(res => res.json())
 
     const { sessionId } = data
+    console.log('data', data)
     await stripe?.redirectToCheckout({ sessionId })
   }
 
