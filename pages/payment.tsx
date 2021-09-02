@@ -1,12 +1,11 @@
 import styles from '../styles/PaymentPage.module.css'
+import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
 import { loadStripe } from '@stripe/stripe-js'
 
 const CartPage = () => {
-  console.log(window.location)
-
   const cart = useSelector((state: any) => state.cart)
   const dispatch = useDispatch()
 
@@ -37,6 +36,10 @@ const CartPage = () => {
     console.log('data', data)
     await stripe?.redirectToCheckout({ sessionId })
   }
+
+  useEffect(() => {
+    console.log(window.location)
+  }, [])
 
   return (
     <div className={styles.wrapper}>
